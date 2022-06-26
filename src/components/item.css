@@ -1,0 +1,134 @@
+.div-item {
+    border: none;
+    display: grid;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+.text-loading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    color: #b11035;
+    -webkit-text-stroke: 1px rgb(16, 15, 15);
+}
+
+.titulo-detalles {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #b11035;
+    -webkit-text-stroke: 1px rgb(16, 15, 15);
+}
+
+
+.card {
+    border: 2px #b11035;
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    border-radius: 12%;
+    box-shadow: 10px 10px 5px gris;
+    align-items: center;
+    margin: 3%;
+
+}
+
+.card-img-top {
+    border-radius: 10%;
+    padding: 5%;
+    height: 320px;
+    width: 280px;
+    border: 3px solid #b11035;
+
+}
+
+.card-body {
+    width: 17.5em;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-shadow: 1px 1px 1px #0f0e0e;
+    border: 2px solid #b11035;
+    margin: inherit;
+    border-radius: 10%;
+}
+
+.text-nombre {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #b11035;
+    -webkit-text-stroke: 1px rgb(16, 15, 15);
+    padding: auto;
+}
+
+.text-stock {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #4d4bb5;
+    -webkit-text-stroke: 1px rgb(16, 15, 15);
+}
+
+.text-precio {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: #c9a5ad;
+    -webkit-text-stroke: 1px rgb(16, 15, 15);
+    padding: auto;
+}
+
+.text-detalles {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: #4d4bb5;
+    -webkit-text-stroke: 1px rgb(16, 15, 15);
+    padding: auto;
+}
+
+.btn-detalle {
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #b11035;
+    -webkit-text-stroke: 1px rgb(16, 15, 15);
+}
+
+.card-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #b11035;
+    -webkit-text-stroke: 1px rgb(16, 15, 15);
+    padding: auto;
+}
+
+
+.btn-detalle {
+    background: #6e6eaf;
+    font-size: larger;
+    color: #fcfafa;
+    text-shadow: 1px 1px 1px #0f0e0e;
+    margin-left: 30%;
+    display: inline-block;
+    flex-direction: row;
+    font-weight: bold;
+    border: 2px solid #01070e;
+    border-radius: 20px;
+}
+
+.btn-fin {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #b11035;
+    -webkit-text-stroke: 1px rgb(16, 15, 15);
+}
