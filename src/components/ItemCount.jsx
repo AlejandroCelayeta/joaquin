@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState} from 'react';
 import "./itemcount.css";
 
 
-export default function ItemCount ({ inicial, dispo, onAdd, setStock }){
+export default function ItemCount ({ inicial, dispo, onAdd, setDispo, setBuyed }){
+    
+    
     
 
     const [count, setCount] = useState(inicial)
@@ -19,6 +20,7 @@ export default function ItemCount ({ inicial, dispo, onAdd, setStock }){
     const sumar = () =>{
         if (count === inicial) setCount(count + 1) 
         if (count < dispo) setCount(count + 1)
+        console.log(dispo)
            
     }
 
@@ -37,7 +39,7 @@ export default function ItemCount ({ inicial, dispo, onAdd, setStock }){
 
 
     function carrito (){
-        return <Link to="/cart"><button className='btn btn-warning fw-bold p-2 m-2'>Ver carrito de compras</button></Link>
+        
     }
 
 
@@ -46,11 +48,10 @@ export default function ItemCount ({ inicial, dispo, onAdd, setStock }){
     <>
         <div className="text-center div-card">
             <div className="card-body-counter">
-                <Link to="/home"><button className='btn btn-warning fw-bold p-2 m-2'>Volver a la librería</button></Link>
                 <p className="contador">{count}</p>
                 <div className='button-display'>
                 <button onClick={restar} className="button-subtract">-</button>
-                <button  disabled={!botonActivo}  onClick={(e) => {onAdd(count); reset();  carritoCompras(); menu(e); setStock(dispo - count); console.log(dispo) }} className="button-agregar">Agregar al carrito</button>
+                <button  disabled={!botonActivo}  onClick={(e) => {onAdd(count); reset(); setBuyed(true);carritoCompras(); menu(e); setDispo(dispo - count); console.log(dispo) }} className="button-agregar">Agregar al carrito</button>
                 <button onClick={sumar} className="button-add">+</button>
                 <button disabled={!botonActivo} onClick={reset} className="button-reset">Reset</button>
                 </div>
